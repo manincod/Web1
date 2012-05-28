@@ -89,27 +89,27 @@ function size(foto){
                                	<div id="navigation">
         <ul>
             <li>
-            <a href="#" onclick="switchid('i1')">Главная</a>
+            <a href="#1" onclick="switchid('i1')">Главная</a>
             
             </li>
 
             <li>
             <a href="#">Продукция</a>
-                <ul> <li><a href='#' onclick="switchid('p1')">Универсальность продукта</a></li> <li><a href='#' onclick="switchid('p2')">Шоколад</a></li> <li><a href='#' onclick="switchid('p3')">Сыр</a></li> <li><a href='#' onclick="switchid('p4')">Мультивитамин</a></li> <li><a href='#' onclick="switchid('p5')">Отзывы</a></li></ul> 
+                <ul> <li><a href='#' onclick="switchid('p1')">Универсальность продукта</a></li> <li><a href='#' onclick="switchid('p2')">Шоколад</a></li> <li><a href='#' onclick="switchid('p3')">Сыр</a></li> <li><a href='#' onclick="switchid('p4')">Мультивитамин</a></li> <li><a href='#9' onclick="switchid('p5')">Отзывы</a></li></ul> 
             </li>
 
             <li>
-            <a href="#" onclick="switchid('i2')">Новости</a>
+            <a href="#3" onclick="switchid('i2')">Новости</a>
                
             </li>
 
             <li>
-            <a href="#" onclick="switchid('i3')">Контакты</a>
+            <a href="#4" onclick="switchid('i3')">Контакты</a>
                
             </li>
 			
 			<li>
-            <a href="#" onclick="switchid('i4')">Купить</a>
+            <a href="#5" onclick="switchid('i4')">Купить</a>
                
             </li>
         </ul>
@@ -175,14 +175,23 @@ function size(foto){
 																								   активной жизни.</p></div>
 																								   </td><tr>
 																								   <tr>
-																								       <td height="320">1</td>
-																								       <td height="320">2</td>
-																									   <td height="320">3</td>
+																								       <td height="320" width='320'>
+																									   <h3>Полезные статьи</h3>
+																									    <a href='#'>  Пектин
+
+                                                                                                      Пектин содержится в клеточных стенках<br /> почти всех растений. Он уникален по своим<br /> свойствам.
+                                                                                                     
+                                                                                                        </a>
+																									   </td>
+																								       
+																									   
+																									   <td height="320" width='320'>Новости I’M LIFE</td>
+																									   <td height="320" width='320'>Программы Balance</td>
 																								   </tr>
 																								   <tr>
-																								       <td height="320">4</td>
-																								       <td height="320">5</td>
-																									   <td height="320">6</td>
+																								       <td height="320">фото</td>
+																								       <td height="320">фото</td>
+																									   <td height="320">фото</td>
 																								   </tr>
 																							  </table>
 													                                             </div>
@@ -203,8 +212,9 @@ function size(foto){
 																															   <div id="p4" style="display:none;">
 	                                                                                                                                 4  
 	                                                                                                                           </div>
-																															   <div id="p5" style="display:none;">
+																															   <div id="p5" style="display:none;"><!-- otzuvu -->
 	                                                                                                                          <!--#include virtual="php/stokvuvod.php" -->
+																															     <div style='position:absolute; top:2%; left:50%;'><!--#include virtual="test2.php" --></div><!--  test2 vvod texta -->
 	                                                                                                                           </div>
 																															   
 																															   
@@ -216,11 +226,12 @@ function size(foto){
 	                                                     ba
 	                                               </div>
 												   <div id="i4" style="display:none;">
-	                                                     bvc
+	                                                <!--#include virtual="php/check.php" -->
 	                                               </div>
 												</div>
 					
 			      </div>
+				  <div id='back'><img src='img/bal.jpg'></div>
 			  </body>
 </html>			   
 

@@ -1,10 +1,12 @@
-<form action="check.php" method="post">
-Which buildings do you want access to?<br />
-<input type="checkbox" name="formDoor[]" value="big box" />Acorn Building<br />
-<input type="checkbox" name="formDoor[]" value="littel box" />Brown Hall<br />
-<input type="checkbox" name="formDoor[]" value="bannana" />Carnegie Complex<br />
-<input type="checkbox" name="formDoor[]" value="chocolet" />Drake Commons<br />
-<input type="checkbox" name="formDoor[]" value="appel" />Elliot House
+<form action="admin.php" method="post">
+Продукция на продаджу<br />
+<input type="checkbox" name="formDoor[]" value="big box" />пак1<br />
+<input type="checkbox" name="formDoor[]" value="littel box" />пак5<br />
+<input type="checkbox" name="formDoor[]" value="bannana" />пак4<br />
+<input type="checkbox" name="formDoor[]" value="chocolet" />пак3<br />
+<input type="checkbox" name="formDoor[]" value="appel" />пак2<br/>
+вписати данни для обратного звязку<br />
+<textarea name='kontakt' cols='30' rows='6'></textarea><br />
 <input type="submit" name="formSubmit" value="Submit" />
 </form>
 
@@ -13,12 +15,12 @@ Which buildings do you want access to?<br />
   $aDoor = $_POST['formDoor'];
   if(empty($aDoor))
   {
-    echo("You didn't select any buildings.");
+    
   }
   else
   {
     $N = count($aDoor);
-    echo("You selected $N door(s): ");
+    echo("вы выбрали $N door(s): ");
     for($i=0; $i < $N; $i++)
     {
       echo($aDoor[$i] . " ");

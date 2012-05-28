@@ -29,7 +29,7 @@ $result = mysql_query("SELECT * from user1 ORDER by id desc");
  else {
  $p = $_GET['p']*$chislo - $chislo;
  }
- $nomer = 4;
+ $nomer = 8;
 
  $result = mysql_query("SELECT * from user1 ORDER by id asc limit $p, $nomer");
 
@@ -44,7 +44,9 @@ $result = mysql_query("SELECT * from user1 ORDER by id desc");
       {
          for ($c=0; $c<mysql_num_rows($result); $c++)
             {
-               echo '<div style="width:400px; max-heigth:500px; background-color:#d3d3d3; word-wrap: break-word;">';
+               echo '<div style="width:400px; max-heigth:500px; background-color:#d3d3d3; word-wrap: break-word; border-radius: 6px;  -moz-box-shadow: 0 0 10px rgba(0,0,0,0.2); /* ??? Firefox */
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2); /* ??? Safari ? Chrome */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* ????????? ???? */">';
                $new = mysql_fetch_array($result);
                echo '<blockquote class="news"><p>'.(htmlspecialchars($new["from2"], ENT_QUOTES)).'</p></blockquote>';
                echo '<p>'.(htmlspecialchars($new["koment2"], ENT_QUOTES)).'</p>';
@@ -53,7 +55,7 @@ $result = mysql_query("SELECT * from user1 ORDER by id desc");
       }
       // навигатор
       if (mysql_num_rows($result)==0 || $num_rows<1) {} else {
-                  echo '<div style="border-radius: 6px; background: #855; padding: 3px; text-align: center; width:20%;">';
+                  echo '<div style="border-radius: 6px; background: #055; padding: 3px; text-align: center; width:20%;">';
                   for ($i=1; $i<=$num_rows; $i++) {
                   if ($i != $nav) {
                   echo '<span><a href="'.$PHP_SELF.'?p='.$i.'">'.$i.'</a></span>&nbsp;';
@@ -63,3 +65,5 @@ $result = mysql_query("SELECT * from user1 ORDER by id desc");
                   }
                   }
                   echo '</div>';}
+				   header('Location: ');
+				  ?>

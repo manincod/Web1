@@ -1,7 +1,8 @@
+body{background-color:#fff;}
 #container{
   width:80%;
   height:132%;
-  background-color:#ffffff;
+  background-color:#fff;
   position:absolute;
   left:10%;
 }
@@ -70,4 +71,12 @@ p{font-family: Verdana, Arial, Helvetica, sans-serif; font-size:14px;}
 td{-moz-box-shadow: 0 0 10px rgba(0,0,0,0.2); /* ??? Firefox */
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2); /* ??? Safari ? Chrome */
     box-shadow: 0 0 10px rgba(0,0,0,0.2); /* ????????? ???? */
-}}
+}
+
+
+
+#back{
+position:absolute;
+left:60%;
+z-index:-2;
+}
