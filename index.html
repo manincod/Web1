@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type"/>
+
+<title>balanc-cv</title>
+
+
+
+<script type="text/javascript">
+<!--
+var image1=new Image()
+image1.src="index1.jpg"
+var image2=new Image()
+image2.src="index2.jpg"
+var image3=new Image()
+image3.src="index3.jpg"
+//-->
+</script>
+
+<link rel="stylesheet" type="text/css" href="sla.css"> 
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<link rel="stylesheet" type="text/css" href="style1.css"> 
+<script>
+ var ids=new Array('i1','p1','p2', 'p3', 'p4', 'p5', 'i2', 'i3', 'i4');
+
+function switchid(id){	
+	hideallids();
+	showdiv(id);
+}
+
+function hideallids(){
+	//loop through the array and hide each element by id
+	for (var i=0;i<ids.length;i++){
+		hidediv(ids[i]);
+	}		  
+}
+
+function hidediv(id) {
+	//safe function to hide an element with a specified id
+	if (document.getElementById) { // DOM3 = IE5, NS6
+		document.getElementById(id).style.display = 'none';
+	}
+	else {
+		if (document.layers) { // Netscape 4
+			document.id.display = 'none';
+		}
+		else { // IE 4
+			document.all.id.style.display = 'none';
+		}
+	}
+}
+
+function showdiv(id) {
+	//safe function to show an element with a specified id
+		  
+	if (document.getElementById) { // DOM3 = IE5, NS6
+		document.getElementById(id).style.display = 'block';
+	}
+	else {
+		if (document.layers) { // Netscape 4
+			document.id.display = 'block';
+		}
+		else { // IE 4
+			document.all.id.style.display = 'block';
+		}
+	}
+}
+
+function size(foto){
+
+	     document.getElementById('tab').src = foto.src;
+	 
+	 }   
+
+ 
+ 
+</script>
+</head>
+
+
+               <body>
+			        
+					 <div id='container'>     
+						  <div id='logo'><h1>balance</h1></div>
+						  
+						  <div id="menu">
+                               	<div id="navigation">
+        <ul>
+            <li>
+            <a href="#" onclick="switchid('i1')">Главная</a>
+            
+            </li>
+
+            <li>
+            <a href="#">Продукция</a>
+                <ul> <li><a href='#' onclick="switchid('p1')">Универсальность продукта</a></li> <li><a href='#' onclick="switchid('p2')">Шоколад</a></li> <li><a href='#' onclick="switchid('p3')">Сыр</a></li> <li><a href='#' onclick="switchid('p4')">Мультивитамин</a></li> <li><a href='#' onclick="switchid('p5')">Отзывы</a></li></ul> 
+            </li>
+
+            <li>
+            <a href="#" onclick="switchid('i2')">Новости</a>
+               
+            </li>
+
+            <li>
+            <a href="#" onclick="switchid('i3')">Контакты</a>
+               
+            </li>
+			
+			<li>
+            <a href="#" onclick="switchid('i4')">Купить</a>
+               
+            </li>
+        </ul>
+    </div>                                                                      
+	</div>
+                                
+                           
+                                                                       
+					                                          
+			                                                                     
+                                                              
+			        
+					                            <div id='wind'>
+												                                   <div id="i1" style="display:block;"> <!-- 1 vikno -->
+	                                                                                               <div id='table1'>                      
+                                                                                                   	  <table width="100%">  
+																								
+																								     <tr><td colspan="3" height="300"> 
+																									 
+																									                       <div id="sl">
+                                                                                                                                      <img src="x_68e7d4c2.jpg" name="slide" width="100%" height="300px" />
+                                  <script>
+                                           <!--
+                                           //variable that will increment through the images
+                                           var step=1
+                                           function slideit(){
+                                           //if browser does not support the image object, exit.
+                                           if (!document.images)
+                                            return
+                                           document.images.slide.src=eval("image"+step+".src")
+                                           if (step<3)
+                                           step++
+                                           else
+                                           step=1
+                                           //call function "slideit()" every 2.5 seconds
+                                           setTimeout("slideit()",2500)
+                                           }
+                                           slideit()
+                                          //-->
+                                        </script>
+
+																																	 
+                                                                                                                                      
+                                                                                                                               </div>
+																														          
+																									 
+																									 </td></tr>
+													                                         
+																							       <tr><td colspan="3" height="120"><p style='position:absolute; top:290px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size:20px;'>BALANCE</p>
+																								   
+																								  <div id='tdsp' style='position:absolute; left:400px; top:320px;'>
+																								   <ul>
+																								       <li>Нормализует вес</li>
+																									    <li>Повышает тонус</li>
+																										 <li>Улучшает кишечную флору</li>
+																										  <li>Выводит токсины и очищает </li>
+																									 </ul>
+																								   </div>
+																								      <div style='position:absolute; left:10px; top:325px;'> 
+																									  <p>Высокоактивные продукты призваны решать <br />
+																								   проблему быстрого, полезного и безопасного <br />
+																								   питания, продлевая тем самым человеку годы <br />
+																								   активной жизни.</p></div>
+																								   </td><tr>
+																								   <tr>
+																								       <td height="320">1</td>
+																								       <td height="320">2</td>
+																									   <td height="320">3</td>
+																								   </tr>
+																								   <tr>
+																								       <td height="320">4</td>
+																								       <td height="320">5</td>
+																									   <td height="320">6</td>
+																								   </tr>
+																							  </table>
+													                                             </div>
+																						   
+																						   </div><!-- 1 vikno kinez -->
+	                                                                                                                       <div id='prod'><!-- 2 vikno -->
+												                                                                               
+																															   
+																															            <div id="p1" style="display:none;">
+	                                                                                                                                          1    
+	                                                                                                                                      </div>
+																															              <div id="p2" style="display:none;">
+	                                                                                                                                          2   
+	                                                                                                                                      </div>
+																															   <div id="p3" style="display:none;">
+	                                                                                                                                 3  
+	                                                                                                                           </div>
+																															   <div id="p4" style="display:none;">
+	                                                                                                                                 4  
+	                                                                                                                           </div>
+																															   <div id="p5" style="display:none;">
+	                                                                                                                          <?php include './php/stokvuvod.php'; ?>
+	                                                                                                                           </div>
+																															   
+																															   
+																															   </div><!-- 2 vikno kinez -->
+												   <div id="i2" style="display:none;">
+	                                                     my
+	                                               </div>
+												   <div id="i3" style="display:none;">
+	                                                     ba
+	                                               </div>
+												   <div id="i4" style="display:none;">
+	                                                     bvc
+	                                               </div>
+												</div>
+					
+			      </div>
+			  </body>
+</html>			   
+	<?php echo 'hi'; ?>
+																																

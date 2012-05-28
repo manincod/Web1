@@ -1,0 +1,32 @@
+
+
+
+
+#slideshow {
+    position:relative;
+ 
+	height:100%;
+	
+}
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+   
+    opacity:0.0;
+height:100%;
+width:100%
+	}
+
+#slideshow IMG.active {
+    
+    opacity:1.0;
+	
+}
+
+#slideshow IMG.last-active {
+
+	
+}
+
