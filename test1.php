@@ -20,8 +20,7 @@ if(empty($enter) or empty($from)){ echo 'enpty';}
                         VALUES ('" . mysql_real_escape_string($enter) . "', '" . mysql_real_escape_string($from) . "')") or die(mysql_error());
          
    header('Location: test2.php');
-
-}
+   }
   
  
 ?>

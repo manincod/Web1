@@ -1,13 +1,5 @@
 <?php
-$host='localhost';
-   $pass='';
-   $user='root';
-   $db='data';
-   $table='user1';
-                                            
-   $b = mysql_connect($host, $user, $pass) or die(mysql_error());
-   mysql_select_db($db, $b) or die(mysql_error());
-
+include './../config.php';
 
 $result = mysql_query("SELECT * from user1 ORDER by id desc");
    $chislo = 6;
