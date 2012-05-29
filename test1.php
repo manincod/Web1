@@ -3,11 +3,10 @@
     $from = $_POST['from']; 
 	
 if(empty($enter) or empty($from)){ echo 'enpty';}
-$host='localhost';
+   $host='localhost';
    $pass='';
    $user='root';
    $db='data';
-   $table='user';
                                             
    $b = mysql_connect($host, $user, $pass) or die(mysql_error());
    mysql_select_db($db, $b) or die(mysql_error());
@@ -17,10 +16,10 @@ $host='localhost';
    
 	if (isset($_POST['start']))
 	{
-	$query = mysql_query("INSERT INTO `user` (`koment`, `from`) VALUES ('" . $enter . "', '" . $from . "')") or die(mysql_error());
-	
-
-           header('Location: test2.php');
+	$query = mysql_query("INSERT INTO `user` (`koment`, `from`) 
+                        VALUES ('" . mysql_real_escape_string($enter) . "', '" . mysql_real_escape_string($from) . "')") or die(mysql_error());
+         
+   header('Location: test2.php');
 
 }
   
